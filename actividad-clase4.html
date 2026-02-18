@@ -79,19 +79,31 @@ th {
 <h1>🌐 Actividad Clase 4</h1>
 <h2>Comunicación entre Servicios + REST + Eventos + Service Discovery</h2>
 
-<p><strong>Equipo:</strong> ____________________</p>
-<p><strong>Proyecto:</strong> ____________________</p>
+<p><strong>Equipo:</strong>   ________Maria Paula Andrade, Byron Cruz, Robinson otero, Cristian Camilo Maje__________</p>
+<p><strong>Proyecto:</strong> _____Uni Sport______</p>
 
 <div class="section">
 <h2>🪜 1. Interacciones entre Servicios</h2>
 
 <p><strong>Interacción 1</strong></p>
+
 <label>Servicio que envía:</label>
-<div class="line"></div>
+<div class="line">Sistema de usuarios</div>
+<div class="line">Pasarela de pagos</div>
+<div class="line">Servicio de pagos</div>
+<div class="line">Gestión de eventos deportivos</div>
+
 <label>Servicio que recibe:</label>
-<div class="line"></div>
+<div class="line">Servicio de autenticacion de usuarios</div>
+<div class="line">Gestión recibos</div>
+<div class="line">Servicio de apuestas</div>
+<div class="line">Servicio de notificaciones</div>
+
 <label>Información enviada:</label>
-<div class="line"></div>
+<div class="line">Servicio de apuestas -> Gestión de eventos deportivos -> Servicio de pagos</div>
+<div class="line">Pasarela de pagos -> Gestión recibos -> Servicio de notificaciones</div>
+<div class="line">Servicio de autenticacion de usuarios -> Sistema de usuarios -> Servicio de notificaciones</div>
+<div class="line">Gestión de recarga y retiro de dinero -> Pasarela de pagos -> Servicio de notificaciones</div>
 <label>¿Qué sucede si no responde?</label>
 <div class="line"></div>
 
