@@ -108,17 +108,17 @@ th {
 <label>¿Qué sucede si no responde?</label>
 <div class="line"></div>
 
-<p><strong>Servicio de apuestas</strong></p>
+<p><strong>1. Servicio de apuestas</strong></p>
 <div class="line">No se registran mas apuestas</div>
 
-<p><strong>Pasarela de pagos</strong></p>
+<p><strong>2. Pasarela de pagos</strong></p>
 <div class="line">todas los procesos de transaccion quedan suspendidas</div>
 
-<p><strong>Servicio de autenticacion de usuarios</strong></p>
+<p><strong>3. Servicio de autenticacion de usuarios</strong></p>
 <div class="line">Se podran visualizar los eventos deportivos -- no se podrian realizar ningun tipo de apuestas</div>
 </div>
 
-<p><strong>Gestión de recarga y retiro de dinero</strong></p>
+<p><strong>4. Gestión de recarga y retiro de dinero</strong></p>
 <div class="line">Mientras que el usuario cuente con saldo disponible en su cuenta puede seguir realizando apuestas -- no se podran hacer recargas de saldo o retiros de saldo hasta que se solucione el problema</div>
 </div>
 
@@ -135,20 +135,26 @@ th {
 <tr>
 <td>1</td>
 <td></td>
-<td></td>
-<td></td>
+<td>x</td>
+<td>Un servicio emisor publica eventos sin conocer a los destinatarios y los servicios consumidores reaccionan cuando los reciben</td>
 </tr>
 <tr>
 <td>2</td>
+<td>x</td>
 <td></td>
-<td></td>
-<td></td>
+<td>se require un servicio concreto para recibir una respuesta directa al finalizar las autenticaciones</td>
 </tr>
 <tr>
 <td>3</td>
+<td>x</td>
 <td></td>
+<td>Se espera una respuesta inmediata despues de efectuar la verificaciones dentro de la base de datos</td>
+</tr>
+<tr>
+<td>4</td>
+<td>x</td>
 <td></td>
-<td></td>
+<td>Se hace uso de servicios externos o de terceror lo que facilita su implementacion</td>
 </tr>
 </table>
 </div>
@@ -166,20 +172,25 @@ th {
 <tr>
 <td>1</td>
 <td></td>
-<td></td>
-<td></td>
+<td>x</td>
+<td>Se espera que el sistema de apuestas funcione de forma asincronica, el uso debe ser simultaneo sin importar la cantidad de peticiones</td>
 </tr>
 <tr>
 <td>2</td>
+<td>x</td>
 <td></td>
-<td></td>
-<td></td>
+<td>Este debe sincrono, ya que debe tener una sere de procesos antes de efectuar una accion de pago</td>
 </tr>
 <tr>
 <td>3</td>
+<td>x</td>
 <td></td>
+<td>Este puede ser sincrono ya que necesita verificaciones en las base de datos para efectuar una autenticacion de usuario</td>
+</tr>
+<td>4</td>
+<td>x</td>
 <td></td>
-<td></td>
+<td>Este puede ser sincrono ya que debe verificar el uso saldos para hacaer las recargas o retiros</td>
 </tr>
 </table>
 </div>
