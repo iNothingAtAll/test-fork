@@ -225,7 +225,9 @@ th {
 
 <div class="section">
 <h2>🪜 6. Service Discovery</h2>
-<label>¿Qué problema ocurre si cambia la IP de un servicio?</label>
+<label>¿Qué problema ocurre si cambia la IP de un servicio?
+  Si un servicio cambia su IP, los demás servicios que intenten comunicarse con él usando la IP antigua no podrán encontrarlo, lo que resultará en fallos de comunicación.
+</label>
 <div class="line"></div>
 <label>¿Cómo sabría un servicio dónde encontrar otro?
   Un servicio no sabría por sí mismo la nueva ubicación de otro a menos que se lo pregunten a un intermediario. Esa es la función del Service Discovery. Cada servicio, al iniciarse, se registra en un registro central (Service Registry) con su nombre y su dirección IP actual.
