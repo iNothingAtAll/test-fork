@@ -209,7 +209,7 @@ th {
 </label>
 <div class="line"></div>
 <label>¿Qué pasaría si falla?
-  
+
   Si el servicio de apuestas falla, los usuarios no podrían realizar su acción principal en la plataforma: apostar en los eventos.
 </label>
 <div class="line"></div>
@@ -227,11 +227,17 @@ th {
 <h2>🪜 6. Service Discovery</h2>
 <label>¿Qué problema ocurre si cambia la IP de un servicio?</label>
 <div class="line"></div>
-<label>¿Cómo sabría un servicio dónde encontrar otro?</label>
+<label>¿Cómo sabría un servicio dónde encontrar otro?
+  Un servicio no sabría por sí mismo la nueva ubicación de otro a menos que se lo pregunten a un intermediario. Esa es la función del Service Discovery. Cada servicio, al iniciarse, se registra en un registro central (Service Registry) con su nombre y su dirección IP actual.
+</label>
 <div class="line"></div>
-<label>¿Por qué sería útil Service Discovery?</label>
+<label>¿Por qué sería útil Service Discovery?
+  Aporta elasticidad y robustez al sistema. Permite que los microservicios sean dinámicos y escalables sin intervención manual. Si un servicio se cae y se levanta en una IP diferente, se vuelve a registrar automáticamente. Si se crean 5 instancias de un servicio para soportar más carga, el discovery permite balancear la carga entre ellas de forma transparente para quien las consulta.
+</label>
 <div class="line"></div>
-<label>¿Dónde lo aplicarían en su sistema?</label>
+<label>¿Dónde lo aplicarían en su sistema?
+  Cuando el Servicio de Apuestas necesite verificar el saldo de un usuario, le preguntaría al Service Discovery dónde encontrar al Servicio de Pagos
+</label>
 <div class="line"></div>
 </div>
 
