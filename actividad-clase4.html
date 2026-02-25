@@ -199,18 +199,26 @@ th {
 <h2>🪜 4. Eventos Importantes del Sistema</h2>
 1️⃣ _______Apuestas realizadas_______________________________<br><br>
 2️⃣ ___________Evento Deportivo Finalizado___________________________<br><br>
-3️⃣ ______________________________________
+3️⃣ _______________SaldoUsuarioActualizado_______________________
 </div>
 
 <div class="section">
 <h2>🪜 5. Análisis de Fallos</h2>
-<label>Servicio más crítico:</label>
+<label>Servicio más crítico:
+  Servicio de apuestas
+</label>
 <div class="line"></div>
-<label>¿Qué pasaría si falla?</label>
+<label>¿Qué pasaría si falla?
+  Si el servicio de apuestas falla, los usuarios no podrían realizar su acción principal en la plataforma: apostar en los eventos.
+</label>
 <div class="line"></div>
-<label>¿El sistema debe detenerse o continuar?</label>
+<label>¿El sistema debe detenerse o continuar?
+  El sistema no debe detenerse por completo. Los servicios periféricos deben continuar funcionando.
+</label>
 <div class="line"></div>
-<label>¿Cómo podrían manejar este fallo?</label>
+<label>¿Cómo podrían manejar este fallo?
+  Mecanismos de Re-intento (Retry): La aplicación frontend debería intentar la petición al servicio de apuestas un par de veces más si recibe un error temporal
+</label>
 <div class="line"></div>
 </div>
 
